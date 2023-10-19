@@ -5,7 +5,7 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import userRoute from './routes/user.route.js'
+import productRoute from './routes/product.route.js'
 
 
 
@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(path.dirname(url), 'public')));
 
 // url endpoint 
-app.use('/user',userRoute)
+app.use('/product',productRoute)
 
 
 // catch 404 and forward to error handler

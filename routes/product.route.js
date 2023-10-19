@@ -1,5 +1,5 @@
 import experss from 'express';
-import {fatch,create,update,remove} from '../controller/user.controller.js'
+import {fatch,create,update,remove} from '../controller/products.controller.js'
 
 const  router = experss.Router();
 
