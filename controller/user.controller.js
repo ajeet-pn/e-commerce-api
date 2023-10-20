@@ -18,7 +18,7 @@ export const create = async (resquest, respone) => {
 
 // Find user in DataBase
 export const fatch = async (resquest, respone) => {
-    const user = await User.find()
+    const user = await User.find().populate('Product')
     if(user.length) return respone.status(200).json(user)
     respone.status(404).json({message:"User collection is empty"})   
     
